@@ -12,8 +12,8 @@
       "strategy": "httpGetRequest",
       "url": {
         "linux": {
-          "x64": "https://github.com/drtheodor/PackSquash/releases/download/v0.4.0+quiet.1/PackSquash.CLI.executable.x86_64-unknown-linux-musl.zip",
-          "arm64": "https://github.com/drtheodor/PackSquash/releases/download/v0.4.0+quiet.1/PackSquash.CLI.executable.aarch64-unknown-linux-musl.zip"
+          "x64": "https://github.com/drtheodor/PackSquash/releases/download/v0.4.0%2Bquiet.1/packsquash-x86_64-unknown-linux-gnu.zip",
+          "arm64": ""
         },
         "windows": {
           "x64": "https://github.com/drtheodor/PackSquash/releases/download/v0.4.0+quiet.1/PackSquash.CLI.executable.x86_64-pc-windows-gnu.zip"
