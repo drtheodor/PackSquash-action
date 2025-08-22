@@ -13,7 +13,7 @@ inputs:
   packsquash_manifest:
     description: 'Manifest URL'
     required: false
-    default: 'https://binarymanifests.action.packsquash.aylas.org/v1'
+    default: 'https://github.com/drtheodor/PackSquash-action/raw/refs/heads/master/data/packsquash_binary_manifests/v1.json'
   packsquash_version:
     description: 'The PackSquash version that the action will use. Please note that too old or too new versions may be incompatible with or not fully supported by the action.'
     required: true
