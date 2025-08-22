@@ -35,7 +35,9 @@ export async function runPackSquash(
   await addProblemMatcher(workingDirectory.problemMatcherFile);
 
   startGroup("PackSquash output");
-  const exitCode = await exec(workingDirectory.packsquashBinary, [], {
+  const args: string[] = [];
+  if (getInputValue("quiet_logs")) args.push("-q");
+  const exitCode = await exec(workingDirectory.packsquashBinary, args, {
     input: Buffer.from(packSquashOptions.stringifiedOptions),
     env: {
       PACKSQUASH_SYSTEM_ID: systemId,

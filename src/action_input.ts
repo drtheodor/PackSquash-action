@@ -12,6 +12,7 @@ const ActionInputsObject = {
   artifact_name: "string",
   show_emoji_in_packsquash_logs: true,
   enable_color_in_packsquash_logs: true,
+  quiet_logs: false,
 };
 
 export type ActionInputIdentifier = keyof typeof ActionInputsObject;

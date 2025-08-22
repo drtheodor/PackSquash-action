@@ -37,6 +37,10 @@ inputs:
     description: 'If true, the action will instruct PackSquash to color the log messages it generates, which looks prettier. Otherwise, the messages will not be colored.'
     required: false
     default: 'true'
+  quiet_logs:
+    required: false
+    default: 'false'
+
 runs:
   using: node20
   main: dist/main/index.js
