@@ -10,6 +10,10 @@ inputs:
     description: 'The system identifier PackSquash will use to generate cryptographic secrets. Unless you know what you are doing, it is recommended to leave this parameter unset, as doing so will let the action generate and use a suitable system identifier automatically.'
     required: false
     default: ''
+  packsquash_manifest:
+    description: 'Manifest URL'
+    required: false
+    default: 'https://binarymanifests.action.packsquash.aylas.org/v1'
   packsquash_version:
     description: 'The PackSquash version that the action will use. Please note that too old or too new versions may be incompatible with or not fully supported by the action.'
     required: true

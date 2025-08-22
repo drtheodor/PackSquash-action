@@ -63,7 +63,7 @@ export class PackSquashBinaryManifest {
     }
   }
 
-  public static async fetchManifest() {
+  public static async fetchManifest(url: string) {
     debug("Getting PackSquash binary manifest");
 
     let manifestJson: string;
@@ -74,7 +74,7 @@ export class PackSquashBinaryManifest {
     } else {
       try {
         const httpResponse = await new HttpClient().get(
-          `https://binarymanifests.action.packsquash.aylas.org/v${CURRENT_MANIFEST_VERSION}`,
+          url
         );
         manifestJson = await httpResponse.readBody();
       } catch (err) {

@@ -4,9 +4,11 @@ import { getBooleanInput, getInput } from "@actions/core";
 const ActionInputsObject = {
   options: "string",
   system_id: "string",
+  packsquash_manifest: "string",
   packsquash_version: "string",
   token: "string",
   action_cache_revision: "string",
+  upload_artifact: true,
   artifact_name: "string",
   show_emoji_in_packsquash_logs: true,
   enable_color_in_packsquash_logs: true,

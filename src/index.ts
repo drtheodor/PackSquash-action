@@ -27,7 +27,7 @@ async function run() {
     );
   }
 
-  const binaryManifest = await PackSquashBinaryManifest.fetchManifest();
+  const binaryManifest = await PackSquashBinaryManifest.fetchManifest(getInputValue("packsquash_manifest"));
   const binaryEnvironment = await binaryManifest.download(getInputValue("packsquash_version"), workingDirectory);
 
   await printPackSquashVersion(binaryEnvironment, workingDirectory);
